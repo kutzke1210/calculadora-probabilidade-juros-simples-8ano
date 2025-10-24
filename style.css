@@ -1,0 +1,52 @@
+header{
+    font-size: 110px;
+    background: rgba(82, 25, 4, 0.596);
+    color: white;
+    text-align: center;
+    width: 1600px;
+    margin: auto;
+    border: 20px solid black;
+    border-radius: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 10px 20px rgba(0, 0, 0, 0.322);
+}
+#taxajuros{
+    width: 579px;
+}
+#divjs{
+    font-size: 60px;
+    background: lime;
+    width: 1500px;
+    text-align: center;
+    margin: auto;
+}
+input{
+    font-size: 45px;
+    margin-top: 20px;
+    background: silver;
+}
+h1{
+    font-size: 110px;
+    background: rgba(82, 25, 4, 0.596);
+    color: white;
+    text-align: center;
+    width: 1600px;
+    margin: auto;
+    border: 20px solid black;
+    border-radius: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 10px 20px rgba(0, 0, 0, 0.322);
+    margin-top: 200px;
+}
+#divpr{
+    font-size: 60px;
+    background: lime;
+    width: 1500px;
+    text-align: center;
+    margin: auto;
+}
+#dev{
+    background: lime;
+    font-size: 40px;
+    margin-top: 30px;
+}

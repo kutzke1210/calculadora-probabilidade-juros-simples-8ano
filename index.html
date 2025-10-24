@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(2761887-marrom-escuro-fundo-em-estilo-poligonal-abstrato-gradiente-ilustracao-com-retangulos-coloridos-padrao-para-sites-paginas-de-destino-vetor.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    Juros simples
+</header>
+<input type="number" placeholder="Capital (C)" id="capital">
+<br>
+<input type="number" placeholder="Taxa de juros (i)" min="0" max="100" id="taxajuros">
+<br>
+<input type="number"  placeholder="Tempo" min="0" id="tempo">
+<br>
+<input type="button" value="juros simples" onclick="jurossimples()">
+<div id="divjs" class="menu" ></div>
+<script>
+    function jurossimples(){
+        let div=document.getElementById('divjs')
+        let c=document.getElementById('capital').value 
+        let capital=Number(c)
+        let i=document.getElementById('taxajuros').value
+        let taxa_juros=Number(i)
+        let taxa=taxa_juros/100
+        let t=document.getElementById('tempo').value
+        let tempotop=Number(t)
+        let tempo=tempotop/12
+        if(!c||!i||!t){
+            alert('preencha todos os campos!')
+        }else{
+            div.innerHTML=`${capital*taxa*tempo}`
+        }
+    }
+</script>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WFN5dxBTMgA?si=LdRG6YqSrcfkM3IW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h1>probabilidade</h1>
+<input type="number" id="casosfavoraveis" placeholder="casos favoráveis"><br>
+<input type="number" id="casospossiveis" placeholder="casos possíveis"><br>
+<input type="button" onclick="probabilidade()" value="calcular">
+<div id="probabilidadetop"></div>
+<script>
+    function probabilidade(){
+        let divpr=document.getElementById('probabilidadetop')
+        let cf=document.getElementById('casosfavoraveis').value
+        let casosfavoraveis=Number(cf)
+        let cp=document.getElementById('casospossiveis').value
+        let casospossiveis=Number(cp)
+        if(!cf||!cp){
+            alert('preencha todos os dados')
+        }else{
+            divpr.innerHTML=`${(casosfavoraveis/casospossiveis)*100}%`
+        }
+    }
+</script>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iNCkGogNtKI?si=b3ersoPK4G1e6lai" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p id="dev">Desenvolvido por Eduardo Kutzke</p>
+</body>
+</html>
