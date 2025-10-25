@@ -36,11 +36,10 @@
         let taxa=taxa_juros/100
         let t=document.getElementById('tempo').value
         let tempotop=Number(t)
-        let tempo=tempotop/12
         if(!c||!i||!t){
             alert('preencha todos os campos!')
         }else{
-            div.innerHTML=`${capital*taxa*tempo}`
+            div.innerHTML=`${capital*taxa*tempotop}`
         }
     }
 </script>
