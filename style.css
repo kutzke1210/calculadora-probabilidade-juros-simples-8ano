@@ -50,3 +50,10 @@ h1{
     font-size: 40px;
     margin-top: 30px;
 }
+#probabilidadetop{
+        font-size: 60px;
+    background: lime;
+    width: 1500px;
+    text-align: center;
+    margin: auto;
+}
